@@ -1,8 +1,7 @@
 language: node_js
 node_js:
 - 6.11.0
-after_script:
-- scp -o StrictHostKeyChecking=no app.js root@www.leiwangxing.com:/root/apps/travistest
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_17dfcb7b460d_key -iv $encrypted_17dfcb7b460d_iv
   -in id_rsa.enc -out ~\/.ssh/id_rsa -d
@@ -18,3 +17,6 @@ before_install:
 - ssh-add ~/.ssh/id_rsa
 
 - cp .travis/ssh_config ~/.ssh/config
+
+after_script:
+- scp -o StrictHostKeyChecking=no app.js root@www.leiwangxing.com:/root/apps/travistest
