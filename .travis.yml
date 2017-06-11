@@ -3,3 +3,9 @@ language: node_js
 node_js:
 
 - 6.11.0
+
+after_script:
+
+# 构建完毕自动将代码分发到远程主机
+
+- scp -o StrictHostKeyChecking=no app.js root@www.leiwangxing.com:/root/apps/travistest
