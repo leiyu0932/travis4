@@ -1,0 +1,19 @@
+{
+  "name": "travis4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leiyu0932/travis4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leiyu0932/travis4/issues"
+  },
+  "homepage": "https://github.com/leiyu0932/travis4#readme"
+}
